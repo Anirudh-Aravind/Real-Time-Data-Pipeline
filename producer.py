@@ -47,14 +47,14 @@ kafka_config = {
     'bootstrap.servers': 'pkc-41p56.asia-south1.gcp.confluent.cloud:9092',
     'sasl.mechanisms': 'PLAIN',
     'security.protocol': 'SASL_SSL',
-    'sasl.username': '7YDL5TVQZO2LFJ7E',
-    'sasl.password': '9ul1IyZuK1TpjBFfMGE8Ec3vi3L2ruziQLUxKko69gF52Jls43vPncYXdOwnpLRp'
+    'sasl.username': '7YDL5TVQZO2LFJ7E', # Kafka-cluster API key
+    'sasl.password': '9ul1IyZuK1TpjBFfMGE8Ec3vi3L2ruziQLUxKko69gF52Jls43vPncYXdOwnpLRp' # Kafka-cluster API secret
 }
 
 # Create a Schema Registry client
 schema_registry_client = SchemaRegistryClient({
-  'url': 'https://psrc-knmwm.us-east-2.aws.confluent.cloud',
-  'basic.auth.user.info': '{}:{}'.format('VFP34N7WWCJTCWKO', 'w3GTVtCA+wqTKtm27w62idV9d7svLw0zlnZbq2HUvdsRSd+hByLFFVn0KpvmFCfv')
+  'url': 'https://psrc-knmwm.us-east-2.aws.confluent.cloud', # Schema-Registry Endpoint
+  'basic.auth.user.info': '{}:{}'.format('VFP34N7WWCJTCWKO', 'w3GTVtCA+wqTKtm27w62idV9d7svLw0zlnZbq2HUvdsRSd+hByLFFVn0KpvmFCfv') # Schema-Registry API key, Schema-Registry API secret
 })
 
 # Fetch the latest Avro schema for the value
